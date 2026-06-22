@@ -1,9 +1,7 @@
-/* linker.ld — Script de enlazado del kernel
+/* linker.ld — Script de enlazado del kernel (Episode 1)
  *
- * Episode 1: cargar en 1 MiB, secciones .multiboot, .text, .data, .bss
- * Episode 2: ajustar para long mode si hace falta
- *
- * Pendiente: definir secciones cuando exista el código ASM.
+ * Carga el kernel en 1 MiB (convención común para Multiboot2).
+ * Orden: header Multiboot2 → código → datos → BSS.
  */
 
 ENTRY(_start)
@@ -12,9 +10,24 @@ SECTIONS
 {
     . = 1M;
 
-    /* TODO: .multiboot (header Multiboot2) */
-    /* TODO: .text */
-    /* TODO: .rodata */
-    /* TODO: .data */
-    /* TODO: .bss */
+    .multiboot_header : {
+        *(.multiboot_header)
+    }
+
+    .text : {
+        *(.text)
+    }
+
+    .rodata : {
+        *(.rodata)
+    }
+
+    .data : {
+        *(.data)
+    }
+
+    .bss : {
+        *(COMMON)
+        *(.bss)
+    }
 }

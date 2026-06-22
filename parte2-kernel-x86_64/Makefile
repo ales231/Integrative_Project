@@ -33,8 +33,8 @@ OUTPUT_DIR := output
 ISO_STAGING := iso
 
 # Episode 1 — solo arranque Multiboot2
-EP1_ASM := $(SRC_BOOT)/header.asm $(SRC_BOOT)/boot.asm
-EP1_OBJ := $(BUILD_DIR)/header.o $(BUILD_DIR)/boot.o
+EP1_ASM := $(SRC_BOOT)/header.asm $(SRC_BOOT)/main.asm
+EP1_OBJ := $(BUILD_DIR)/header.o $(BUILD_DIR)/main.o
 
 # Episode 2 — arranque + arquitectura + kernel C (se activará más adelante)
 EP2_ASM := $(EP1_ASM) $(SRC_ARCH)/gdt.asm $(SRC_ARCH)/paging.asm
