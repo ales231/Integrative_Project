@@ -1,0 +1,83 @@
+# =============================================================================
+# Integrative_Project — .gitignore
+# Artefactos de build, secretos y archivos locales NO deben subirse a Git.
+# =============================================================================
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# --- Editores e IDEs ---
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# --- Entornos y secretos ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+secrets/
+credentials/
+
+# --- Parte 1: Distro Linux (Cubic) ---
+parte1-distro-linux/build/*.iso
+parte1-distro-linux/build/*.img
+parte1-distro-linux/build/*.squashfs
+parte1-distro-linux/output/
+*.iso
+*.img
+
+# --- Parte 2: Kernel x86_64 ---
+parte2-kernel-x86_64/output/
+parte2-kernel-x86_64/build/
+parte2-kernel-x86_64/*.o
+parte2-kernel-x86_64/**/*.o
+parte2-kernel-x86_64/*.bin
+parte2-kernel-x86_64/**/*.bin
+parte2-kernel-x86_64/*.elf
+parte2-kernel-x86_64/**/*.elf
+parte2-kernel-x86_64/*.iso
+parte2-kernel-x86_64/kernel.iso
+parte2-kernel-x86_64/**/*.iso
+
+# --- Parte 3: Black Hat Bash ---
+parte3-black-hat-bash/.env
+parte3-black-hat-bash/**/data/
+parte3-black-hat-bash/**/*.pcap
+parte3-black-hat-bash/**/*.pcapng
+
+# --- Docker (generados en runtime) ---
+**/docker-data/
+**/.docker/
+
+# --- Logs y temporales ---
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# --- Evidencias pesadas (mantener capturas ligeras y checksums) ---
+docs/evidencias/**/*.pcap
+docs/evidencias/**/*.pcapng
+docs/evidencias/**/*.iso
+docs/evidencias/**/*.mp4
+docs/evidencias/**/*.mkv
+docs/evidencias/**/*.avi
+
+# --- Python / Node (si se usan scripts auxiliares) ---
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+venv/

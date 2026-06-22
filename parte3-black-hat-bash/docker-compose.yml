@@ -1,0 +1,12 @@
+# docker-compose.yml — 8 contenedores
+# TODO: definir servicios, redes dmz e internal
+
+services:
+  # TODO: attacker, victim-web, victim-db, victim-ftp, dns, mail, monitor, jumpbox
+
+networks:
+  dmz:
+    driver: bridge
+  internal:
+    driver: bridge
+    internal: true
