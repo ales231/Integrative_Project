@@ -41,6 +41,7 @@ parte1-distro-linux/output/
 parte2-kernel-x86_64/output/
 parte2-kernel-x86_64/build/
 parte2-kernel-x86_64/iso/
+parte2-kernel-x86_64/.toolchain/
 parte2-kernel-x86_64/*.o
 parte2-kernel-x86_64/**/*.o
 parte2-kernel-x86_64/*.bin

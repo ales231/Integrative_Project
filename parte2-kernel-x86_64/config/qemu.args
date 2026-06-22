@@ -1,5 +1,10 @@
 # Argumentos extra para QEMU (una opción por línea; líneas con # son comentarios)
--serial
-stdio
--display
-gtk
+#
+# El display y -serial los elige run-qemu.sh automáticamente.
+# Forzar display: QEMU_DISPLAY=gtk make run
+#
+# Ejemplos opcionales:
+# -monitor
+# stdio
+# -d
+# guest_errors

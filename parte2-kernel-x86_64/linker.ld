@@ -1,7 +1,7 @@
-/* linker.ld — Script de enlazado del kernel (Episode 1)
+/* linker.ld — Script de enlazado del kernel (Episodes 1 y 2)
  *
- * Carga el kernel en 1 MiB (convención común para Multiboot2).
- * Orden: header Multiboot2 → código → datos → BSS.
+ * Carga el kernel en 1 MiB (convención Multiboot2).
+ * Orden: header Multiboot2 → código → datos → BSS (stack y tablas de página).
  */
 
 ENTRY(_start)
