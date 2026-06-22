@@ -1,8 +1,13 @@
-# Paquetes adicionales para Cubic
+# Paquetes adicionales — Linux Mint Cinnamon (Cubic chroot)
+# Una línea por paquete. Los repos externos se configuran en 04-repos-and-packages.sh
 
-# Una línea por paquete. Ejemplo:
-# docker.io
-# git
-# build-essential
-# nasm
-# qemu-system-x86
+neovim
+git
+curl
+wget
+gpg
+ca-certificates
+lsb-release
+dconf-cli
+glib-compile-schemas
+# code y librewolf se instalan desde repos externos en el script 04

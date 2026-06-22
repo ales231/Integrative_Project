@@ -1,0 +1,13 @@
+# Preferencias de escritorio para usuarios nuevos (formato dconf keyfile).
+# Se copia a ~/.config/dconf/user al crear la cuenta.
+
+[org/cinnamon/desktop/interface]
+gtk-theme='Mint-Y-Dark'
+icon-theme='Mint-Y'
+cursor-theme='Bibata-Modern-Classic'
+
+[org/cinnamon/theme]
+name='Mint-Y-Dark'
+
+[org/gnome/desktop/default-applications]
+web-browser=['librewolf.desktop']

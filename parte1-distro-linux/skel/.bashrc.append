@@ -1,0 +1,6 @@
+
+# --- Proyecto integrador: cargar fragmentos ---
+for f in ~/.bashrc.d/*.sh; do
+  [[ -r "$f" ]] && source "$f"
+done
+unset f

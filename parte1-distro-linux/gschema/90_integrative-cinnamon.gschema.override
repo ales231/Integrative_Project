@@ -1,0 +1,20 @@
+# Valores por defecto del escritorio Cinnamon para todos los usuarios.
+# Documentación de claves: gsettings list-recursively org.cinnamon.desktop.interface
+
+[org.cinnamon.desktop.interface]
+gtk-theme='Mint-Y-Dark'
+icon-theme='Mint-Y'
+cursor-theme='Bibata-Modern-Classic'
+font-name='Ubuntu 11'
+monospace-font-name='Ubuntu Mono 12'
+
+[org.cinnamon/theme]
+name='Mint-Y-Dark'
+
+[org.cinnamon.desktop.background]
+picture-uri='file:///usr/share/backgrounds/linuxmint/default_background.jpg'
+primary-color='145 199 237'
+secondary-color='0 0 0'
+
+[org.gnome.desktop.default-applications]
+web-browser=['librewolf.desktop']
