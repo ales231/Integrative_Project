@@ -14,31 +14,40 @@ Resumen de criterios de evaluación. Ajustar según el enunciado oficial del cur
 
 ## Parte 1 — Distro Linux (25 pts)
 
-- [ ] ISO personalizada basada en Ubuntu o Linux Mint
-- [ ] Boot correcto en VM o hardware
-- [ ] Mínimo 3 modificaciones reales y justificadas
-- [ ] Personalizaciones persistentes (`/etc/skel` o `gschema`)
-- [ ] Video de demostración
+- [x] ISO personalizada basada en Ubuntu o Linux Mint
+- [x] Boot correcto en VM o hardware
+- [x] Mínimo 3 modificaciones reales y justificadas
+- [x] Personalizaciones persistentes (`/etc/skel` o `gschema`)
+- [x] Video de demostración
 
 ## Parte 2 — Kernel x86_64 (30 pts)
 
-- [ ] Build reproducible con Docker
-- [ ] Multiboot2, NASM, GRUB, QEMU
-- [ ] Episode 1: imprimir `OK`
-- [ ] Episode 2: long mode, paging, GDT, código C
-- [ ] Generación de `kernel.iso`
+- [x] Build reproducible con Docker
+- [x] Multiboot2, NASM, GRUB, QEMU
+- [x] Episode 1: imprimir `OK`
+- [x] Episode 2: long mode, paging, GDT, código C
+- [x] Generación de `kernel.iso`
 
 ## Parte 3 — Black Hat Bash (35 pts)
 
-- [ ] Docker y Docker Compose
-- [ ] `make deploy` y `make test`
-- [ ] 8 contenedores funcionando
-- [ ] Verificación de redes
-- [ ] Técnica ofensiva ejecutada y documentada
+- [x] Docker y Docker Compose
+- [x] `make deploy` y `make test`
+- [x] 8 contenedores funcionando
+- [x] Verificación de redes
+- [x] Técnica ofensiva ejecutada y documentada
 
 ## Documentación y repositorio (10 pts)
 
-- [ ] README principal
-- [ ] README por cada parte
-- [ ] Evidencia reproducible
-- [ ] Historial de commits claro y distribuido
+- [x] README principal
+- [x] README por cada parte
+- [x] Evidencia reproducible — [lista-evidencias.md](evidencias/lista-evidencias.md)
+- [x] Historial de commits claro y distribuido
+
+## Documentación adicional generada
+
+| Documento | Ubicación |
+|-----------|-----------|
+| Tabla de arquitectura | [arquitectura-laboratorio.md](arquitectura-laboratorio.md) |
+| Diagrama de redes | [diagrama-redes.md](diagrama-redes.md) |
+| Guion video 8 min | [guion-video-final.md](guion-video-final.md) |
+| Defensa oral | [defensa-oral.md](defensa-oral.md) |

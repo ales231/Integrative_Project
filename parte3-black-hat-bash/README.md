@@ -1,12 +1,28 @@
 # Parte 3 — Black Hat Bash
 
-**Puntos:** 35 · **Responsable:** [Nombre D]
+**Puntos (rúbrica):** 35 · **Responsable:** [Nombre D] · **Estado:** Completada
 
 Laboratorio ofensivo con Docker Compose: 8 contenedores, segmentación de red,
 `make deploy`, `make test` y una técnica ofensiva documentada.
 
+Documentación del proyecto: [README principal](../README.md) ·
+[Diagrama de redes](../docs/diagrama-redes.md) ·
+[Arquitectura](../docs/arquitectura-laboratorio.md) ·
+[Evidencias](../docs/evidencias/lista-evidencias.md) ·
+[Defensa oral](../docs/defensa-oral.md)
+
 > **Aviso ético:** Solo ejecutar en este entorno aislado. Sin objetivos reales
 > ni redes externas no autorizadas.
+
+## Criterios de la rúbrica (checklist)
+
+| Criterio | Cumplimiento | Evidencia |
+|----------|--------------|-----------|
+| Docker y Docker Compose | `docker-compose.yml`, Dockerfiles | `docker compose ps` |
+| `make deploy` y `make test` | `Makefile`, `tests/` | `make-test-output.log` |
+| 8 contenedores funcionando | attacker, web, ftp, db, dns, mail, monitor, jumpbox | `test-containers.sh` |
+| Verificación de redes | dmz + internal | `network/verify-network.sh` |
+| Técnica ofensiva documentada | `offensive/tecnica.md`, `exploit.sh` | `offensive/evidencia/` |
 
 ## Topología
 

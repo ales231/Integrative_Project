@@ -1,9 +1,23 @@
 # Parte 1 — Distro Linux personalizada (Cubic)
 
-**Puntos:** 25 · **Base:** Linux Mint Cinnamon
+**Puntos (rúbrica):** 25 · **Base:** Linux Mint Cinnamon · **Estado:** Completada
 
 ISO personalizada basada en **Linux Mint Cinnamon**, con modificaciones persistentes
 mediante repositorios APT, `/etc/skel`, overrides `gschema` y perfil `dconf`.
+
+Documentación del proyecto: [README principal](../README.md) ·
+[Evidencias](../docs/evidencias/lista-evidencias.md) ·
+[Defensa oral](../docs/defensa-oral.md)
+
+## Criterios de la rúbrica (checklist)
+
+| Criterio | Cumplimiento | Evidencia |
+|----------|--------------|-----------|
+| ISO basada en Ubuntu/Mint | Linux Mint 22.x Cinnamon amd64 | ISO generada en `build/` |
+| Boot correcto en VM | Verificado en VirtualBox/QEMU | `docs/evidencias/parte1/boot-vm.png` |
+| ≥ 3 modificaciones justificadas | 6 modificaciones (tabla abajo) | Video + capturas |
+| Persistencia skel/gschema | Scripts 02, 03 + usuario nuevo | `adduser testuser` |
+| Video de demostración | 3–5 min (Cubic) + video integrador 8 min | [demo/enlaces.md](demo/enlaces.md) |
 
 ## Base elegida
 

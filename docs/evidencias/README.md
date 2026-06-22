@@ -3,6 +3,8 @@
 Capturas, logs y checksums para el evaluador. Los videos y archivos pesados
 van por enlace externo; aquí solo referencias y pruebas ligeras.
 
+**Lista completa:** [lista-evidencias.md](lista-evidencias.md)
+
 ## Convención de nombres
 
 ```

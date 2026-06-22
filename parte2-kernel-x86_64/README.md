@@ -1,16 +1,31 @@
 # Parte 2 — Kernel x86_64
 
-**Puntos:** 30 · **Responsable:** [Nombre C]
+**Puntos (rúbrica):** 30 · **Responsable:** [Nombre C] · **Estado:** Completada
 
 Kernel mínimo x86_64 siguiendo el tutorial *Write Your Own 64-bit Operating System*.
 Build reproducible en Docker con **NASM**, **GRUB (Multiboot2)**, **QEMU**.
+
+Documentación del proyecto: [README principal](../README.md) ·
+[Arquitectura](../docs/arquitectura-laboratorio.md) ·
+[Evidencias](../docs/evidencias/lista-evidencias.md) ·
+[Defensa oral](../docs/defensa-oral.md)
+
+## Criterios de la rúbrica (checklist)
+
+| Criterio | Cumplimiento | Evidencia |
+|----------|--------------|-----------|
+| Build reproducible con Docker | `Dockerfile`, `make docker-episode2` | Log build en `docs/evidencias/parte2/` |
+| Multiboot2, NASM, GRUB, QEMU | `header.asm`, `grub.cfg`, `run-qemu.sh` | `readelf` + capturas QEMU |
+| Episode 1: imprimir `OK` | `make episode1` | `qemu-episode1-ok.png` |
+| Episode 2: long mode, paging, GDT, C | `EPISODE2.md`, `src/arch/` | `qemu-episode2-banner.png` |
+| Generación de `kernel.iso` | `output/kernel.iso` | `ls -lh output/kernel.iso` |
 
 ## Estado
 
 | Episodio | Objetivo | Estado |
 |----------|----------|--------|
-| **Episode 1** | Header Multiboot2 + `OK` en `0xB8000` | Implementado |
-| **Episode 2** | GDT + paging + long mode + `main.c` + `print` | Implementado |
+| **Episode 1** | Header Multiboot2 + `OK` en `0xB8000` | Completado |
+| **Episode 2** | GDT + paging + long mode + `main.c` + `print` | Completado |
 
 Documentación detallada de Episode 2: [EPISODE2.md](EPISODE2.md).
 
