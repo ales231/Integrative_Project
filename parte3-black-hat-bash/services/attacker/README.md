@@ -1,5 +1,11 @@
 # Servicio: attacker
 
-Herramientas ofensivas (nmap, hydra, etc.). Red: `dmz`.
+Imagen con herramientas ofensivas: **nmap**, **rustscan**, **whatweb**, **dirsearch**, **nuclei**, **lftp**.
 
-TODO: Dockerfile y entrypoint.
+- Red: `dmz` (`172.28.10.2`)
+- Volumen: `./offensive` montado en `/lab/offensive`
+
+```bash
+docker compose exec attacker bash
+bash /lab/offensive/exploit.sh
+```

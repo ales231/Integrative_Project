@@ -63,7 +63,20 @@ Documentar qué puede comunicarse con qué en [network/topology.md](network/topo
 
 Documentada en [offensive/tecnica.md](offensive/tecnica.md).
 
-Flujo esperado: reconocimiento → explotación → post-explotación → evidencia → mitigación.
+**Playbook automatizado (15/15 hacking):**
+
+```bash
+make deploy
+make test                              # incluye playbook ofensivo
+# o solo la fase ofensiva:
+docker compose exec attacker bash /lab/offensive/exploit.sh
+```
+
+Herramientas: RustScan → Nmap → WhatWeb → Dirsearch → Nuclei → FTP anónimo.
+
+Evidencias en `offensive/evidencia/` y [docs/evidencias/parte3/](../docs/evidencias/parte3/).
+
+Flujo: reconocimiento → enumeración → vulnerabilidades → acceso FTP → mitigación.
 
 ## Estructura
 
