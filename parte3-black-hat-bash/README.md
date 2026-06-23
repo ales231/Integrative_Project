@@ -1,6 +1,6 @@
 # Parte 3 — Black Hat Bash
 
-**Puntos (rúbrica):** 35 · **Responsable:** [Nombre D] · **Estado:** Completada
+**Responsable:** Pedro Cañar · **Estado:** Completada
 
 Laboratorio ofensivo con Docker Compose: 8 contenedores, segmentación de red,
 `make deploy`, `make test` y una técnica ofensiva documentada.
