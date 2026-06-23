@@ -1,9 +1,8 @@
 # Proyecto Integrador — Ingeniería en Sistemas
 
-**Equipo:** [Nombre 1], [Nombre 2], [Nombre 3], [Nombre 4]  
-**Curso:** [Asignatura]  
-**Período:** [Año-Semestre]  
-**Docente:** [Nombre del docente]
+**Equipo:** Arthur Beltran, Alex Alban, Pedro Cañar
+**Período:** Segundo Semestre 
+**Docente:** JONATHAN EDUARDO TITO ONTANEDA
 
 Proyecto integrador en tres partes: distro Linux personalizada con **Cubic**,
 kernel **x86_64** desde cero y laboratorio ofensivo con **Docker**. Todo el
@@ -34,10 +33,7 @@ material es reproducible desde este repositorio.
 | [docs/arquitectura-laboratorio.md](docs/arquitectura-laboratorio.md) | Tabla de arquitectura del proyecto completo |
 | [docs/diagrama-redes.md](docs/diagrama-redes.md) | Diagramas de red (Parte 3 y visión global) |
 | [docs/evidencias/lista-evidencias.md](docs/evidencias/lista-evidencias.md) | Lista maestra de evidencias por parte |
-| [docs/guion-video-final.md](docs/guion-video-final.md) | Guion del video de demostración (8 min) |
-| [docs/defensa-oral.md](docs/defensa-oral.md) | Preguntas y respuestas para la defensa oral |
-| [docs/equipo.md](docs/equipo.md) | Integrantes y responsabilidades |
-| [docs/rubrica.md](docs/rubrica.md) | Criterios de evaluación |
+
 
 ---
 
@@ -177,7 +173,6 @@ Integrative_Project/
 
 | Entregable | Ubicación |
 |------------|-----------|
-| Video integrador (8 min) | [docs/guion-video-final.md](docs/guion-video-final.md) + enlace en `demo/enlaces.md` |
 | Video Parte 1 (detalle) | [parte1-distro-linux/demo/enlaces.md](parte1-distro-linux/demo/enlaces.md) |
 | SHA256 de la ISO | [docs/evidencias/parte1/](docs/evidencias/parte1/) |
 | Capturas QEMU (Parte 2) | [docs/evidencias/parte2/](docs/evidencias/parte2/) |
@@ -186,24 +181,11 @@ Integrative_Project/
 
 ---
 
-## Convenciones de commits
-
-Formato: `parte{N}|docs|chore: <tipo>: <descripción>`
-
-Ejemplos:
-
-- `parte1: feat: agregar overrides gschema para Cinnamon`
-- `parte2: feat: implementar paging y transición a long mode`
-- `parte3: test: automatizar verificación de 8 contenedores`
-- `docs: evidencia: capturas QEMU episode 2`
-
 Detalle en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-## Equipo
 
-Ver [docs/equipo.md](docs/equipo.md).
 
 ---
 
