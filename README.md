@@ -1,8 +1,14 @@
 # Proyecto Integrador — Ingeniería en Sistemas
 
-**Equipo:** Arthur Beltran, Alex Alban, Pedro Cañar
-**Período:** Segundo Semestre 
-**Docente:** JONATHAN EDUARDO TITO ONTANEDA
+**Equipo:** Arthur Beltran · Alex Alban · Pedro Cañar
+**Período:** Marzo – Julio 2026 · UIDE
+**Docente:** Ing. Jonathan E. Tito O., MSc.
+
+| Integrante | Responsabilidad |
+|------------|----------------|
+| Arthur Beltran | Parte 1 — Distro Linux (Cubic) |
+| Pedro Cañar | Parte 2 — Kernel x86_64 |
+| Alex Alban | **Parte 3 — Black Hat Bash + documentación** |
 
 Proyecto integrador en tres partes: distro Linux personalizada con **Cubic**,
 kernel **x86_64** desde cero y laboratorio ofensivo con **Docker**. Todo el
@@ -81,12 +87,33 @@ make episode2 && make run
 
 ### Parte 3 — Black Hat Bash
 
+**Requisitos:** Docker 24+, Docker Compose v2, 4 GB RAM, 10 GB disco.
+
 ```bash
 cd parte3-black-hat-bash
 cp .env.example .env
-make deploy
-make test
+make deploy          # construye imágenes y levanta 8 contenedores
+make test            # verifica contenedores, redes y ejecuta playbook ofensivo
 ```
+
+Salida esperada de `make test`:
+```
+OK: 8 contenedores en ejecución
+OK: attacker → victim-web (dmz)
+OK: attacker → victim-ftp (dmz)
+OK: attacker → jumpbox SSH (dmz)
+OK: attacker → victim-db bloqueado (red internal)
+OK: verificación de redes completada
+```
+
+Para ejecutar solo la fase ofensiva:
+```bash
+make offensive
+# equivalente a:
+docker compose exec attacker bash /lab/offensive/exploit.sh
+```
+
+Evidencias generadas en `parte3-black-hat-bash/offensive/evidencia/` (19 archivos).
 
 ### Verificación global del repositorio
 
@@ -150,13 +177,37 @@ Integrative_Project/
 
 ### Parte 3 — Black Hat Bash (35 pts)
 
-| Criterio | Evidencia |
-|----------|-----------|
-| Docker y Docker Compose | `docker-compose.yml`, 8 servicios |
-| `make deploy` y `make test` | `Makefile`, scripts en `tests/` |
-| 8 contenedores funcionando | `tests/test-containers.sh` |
-| Verificación de redes | `network/verify-network.sh`, `topology.md` |
-| Técnica ofensiva documentada | `offensive/tecnica.md`, `exploit.sh` |
+**3.A — Lab up and running (20 pts)**
+
+| Criterio | Pts | Evidencia real |
+|----------|-----|----------------|
+| Docker + Compose, repo clonado, `make deploy` exitoso | 6 | 8 imágenes construidas; `docker compose ps` muestra todos `Up` |
+| `make test` = Lab is up + 8 contenedores verificados | 6 | `OK: 8 contenedores en ejecución` — `tests/test-containers.sh` |
+| Redes validadas (dmz 172.28.10.0/24 + internal 172.28.20.0/24) | 4 | `OK: attacker → victim-db bloqueado` — `tests/test-networks.sh` |
+| Tabla de arquitectura + `docker exec` demostrado | 4 | Tabla completa en `parte3-black-hat-bash/README.md` |
+
+**3.B — Técnica ofensiva (15 pts)**
+
+Cadena de ataque de nivel **avanzado**: RustScan → Nmap → WhatWeb → Dirsearch → Nuclei → FTP anónimo → WP user enum.
+
+| Criterio | Pts | Evidencia real |
+|----------|-----|----------------|
+| Técnica ejecutada con evidencia | 6 | 19 archivos en `offensive/evidencia/`; 9 hallazgos documentados |
+| Interpretación técnica correcta | 5 | Análisis por paso en `parte3-black-hat-bash/README.md` |
+| Nivel/ambición de la técnica | 4 | Nivel avanzado: Nuclei (3 HIGH, 2 MEDIUM), `.git` expuesto, RCE potencial |
+
+**Hallazgos principales:**
+
+| Severidad | Vulnerabilidad | Host |
+|-----------|---------------|------|
+| ALTA | FTP anónimo habilitado (vsftpd 3.0.3) | 172.28.10.11:21 |
+| ALTA | Repositorios `.git` expuestos vía HTTP (×2) | 172.28.10.11:80 |
+| ALTA | Endpoint `/upload` sin autenticación (Flask) | 172.28.10.10:8081 |
+| MEDIA | Directory indexing en `/backup/` (Apache) | 172.28.10.11:80 |
+| MEDIA | SSH con autenticación por contraseña | 172.28.10.13:22 |
+| MEDIA | Enumeración de usuarios WordPress (`jtorres`) | 172.28.10.10:80 |
+
+Documentación completa: [`parte3-black-hat-bash/README.md`](parte3-black-hat-bash/README.md) · [`offensive/tecnica.md`](parte3-black-hat-bash/offensive/tecnica.md)
 
 ### Documentación y repositorio (10 pts)
 
@@ -177,6 +228,7 @@ Integrative_Project/
 | SHA256 de la ISO | [docs/evidencias/parte1/](docs/evidencias/parte1/) |
 | Capturas QEMU (Parte 2) | [docs/evidencias/parte2/](docs/evidencias/parte2/) |
 | Salida `make test` (Parte 3) | [docs/evidencias/parte3/](docs/evidencias/parte3/) |
+| Archivos de evidencia ofensiva (19 archivos) | [parte3-black-hat-bash/offensive/evidencia/](parte3-black-hat-bash/offensive/evidencia/) |
 | Lista completa | [docs/evidencias/lista-evidencias.md](docs/evidencias/lista-evidencias.md) |
 
 ---
