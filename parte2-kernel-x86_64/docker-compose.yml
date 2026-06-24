@@ -8,6 +8,7 @@ services:
       dockerfile: Dockerfile
     image: integrative-kernel-toolchain:24.04
     working_dir: /build
+    user: root
     volumes:
       - .:/build
     stdin_open: true

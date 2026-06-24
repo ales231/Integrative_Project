@@ -36,8 +36,8 @@ RUN printf '%s\n' \
     > /etc/kernel-toolchain.versions \
     && cat /etc/kernel-toolchain.versions
 
-RUN groupadd --gid 1000 builder \
-    && useradd --uid 1000 --gid builder --create-home --shell /bin/bash builder
+RUN groupadd --gid 1001 builder \
+    && useradd --uid 1001 --gid builder --create-home --shell /bin/bash builder
 
 WORKDIR /build
 
