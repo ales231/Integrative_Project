@@ -5,11 +5,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     bash curl wget jq git ca-certificates unzip \
     nmap whatweb lftp ftp \
-    python3 python3-pip \
+    python3 python3-pip python3-requests \
     && rm -rf /var/lib/apt/lists/*
 
 # Dirsearch
-RUN git clone --depth 1 https://github.com/maurosoria/dirsearch.git /opt/dirsearch
+RUN git clone --depth 1 https://github.com/maurosoria/dirsearch.git /opt/dirsearch \
+    && pip3 install --break-system-packages -r /opt/dirsearch/requirements.txt 2>/dev/null || \
+       pip3 install --break-system-packages requests
 
 # Nuclei
 ARG NUCLEI_VERSION=3.3.7
@@ -20,12 +22,12 @@ RUN curl -fsSL "https://github.com/projectdiscovery/nuclei/releases/download/v${
     && rm /tmp/nuclei.zip \
     && nuclei -update-templates || true
 
-# RustScan
-ARG RUSTSCAN_VERSION=2.1.1
-RUN curl -fsSL "https://github.com/RustScan/RustScan/releases/download/${RUSTSCAN_VERSION}/rustscan_${RUSTSCAN_VERSION}_amd64.deb" \
-    -o /tmp/rustscan.deb \
-    && dpkg -i /tmp/rustscan.deb || apt-get install -fy \
-    && rm /tmp/rustscan.deb
+# RustScan 2.4.1 — .deb via bee-san/RustScan
+RUN curl -fsSL "https://github.com/bee-san/RustScan/releases/download/2.4.1/rustscan.deb.zip" \
+    -o /tmp/rustscan.deb.zip \
+    && unzip /tmp/rustscan.deb.zip -d /tmp \
+    && dpkg -i /tmp/*.deb || apt-get install -fy \
+    && rm -rf /tmp/rustscan*
 
 WORKDIR /lab
 ENV PATH="/opt/dirsearch:${PATH}"
