@@ -1,0 +1,13 @@
+# Nmap 7.93 scan initiated Wed Jun 24 01:32:29 2026 as: nmap --script ssh-auth-methods -p22 -oN /lab/offensive/evidencia/05-nmap-ssh-jumpbox.txt 172.28.10.13
+Nmap scan report for integrative-lab-jumpbox.integrative-lab_dmz (172.28.10.13)
+Host is up (0.000074s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+MAC Address: 26:B8:60:62:F6:B8 (Unknown)
+
+# Nmap done at Wed Jun 24 01:32:29 2026 -- 1 IP address (1 host up) scanned in 0.25 seconds

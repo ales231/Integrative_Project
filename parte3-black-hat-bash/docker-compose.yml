@@ -30,6 +30,8 @@ services:
     build: services/victim-ftp
     container_name: ${COMPOSE_PROJECT_NAME:-integrative-lab}-victim-ftp
     hostname: victim-ftp
+    security_opt:
+      - seccomp:unconfined
     networks:
       dmz:
         ipv4_address: 172.28.10.11

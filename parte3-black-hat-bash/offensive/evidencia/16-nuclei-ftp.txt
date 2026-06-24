@@ -1,0 +1,28 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.3.7
+
+		projectdiscovery.io
+
+[[34mINF[0m] Your current nuclei-templates  are outdated. Latest is v10.4.5
+[[33mWRN[0m] failed to update nuclei templates: [:RUNTIME] failed to download templates <- [:RUNTIME] failed to read resp body <- context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[[34mVER[0m] Started metrics server at localhost:9092
+[[33mWRN[0m] Found 1 templates loaded with deprecated protocol syntax, update before v3 for continued support.
+[[34mINF[0m] Current nuclei version: v3.3.7 ([91moutdated[0m)
+[[34mINF[0m] Current nuclei-templates version:  ([91moutdated[0m)
+[[93mWRN[0m] Scan results upload to cloud is disabled.
+[[34mINF[0m] New templates added in latest release: 0
+[[34mINF[0m] Templates loaded for current scan: 5
+[[93mWRN[0m] Loading 5 unsigned templates for scan. Use with caution.
+[[34mINF[0m] Targets loaded for current scan: 1
+[[34mINF[0m] Running httpx on input host
+[[34mINF[0m] Found 0 URL from httpx
+[[34mVER[0m] Sent TCP request to 172.28.10.11:21
+[[92mftp-anonymous-login[0m] [[94mtcp[0m] [[33mmedium[0m] 172.28.10.11:21
+[[33mWRN[0m] [wordpress-login-panel] Could not execute request for 172.28.10.11:21: [:RUNTIME] got err while executing https://172.28.10.11:21/wp-login.php <- GET https://172.28.10.11:21/wp-login.php giving up after 2 attempts: Get "https://172.28.10.11:21/wp-login.php": tls: first record does not look like a TLS handshake; could not tls handshake
+[[33mWRN[0m] [unauthenticated-file-upload] Could not execute request for 172.28.10.11:21: [:RUNTIME] got err while executing https://172.28.10.11:21/uploads <- GET https://172.28.10.11:21/uploads giving up after 2 attempts: Get "https://172.28.10.11:21/uploads": tls: first record does not look like a TLS handshake; could not tls handshake
+[[33mWRN[0m] [directory-listing] Could not execute request for 172.28.10.11:21: [:RUNTIME] got err while executing https://172.28.10.11:21/ <- GET https://172.28.10.11:21/ giving up after 2 attempts: Get "https://172.28.10.11:21/": tls: first record does not look like a TLS handshake; could not tls handshake
+[[33mWRN[0m] [git-config-exposure] Could not execute request for 172.28.10.11:21: [:RUNTIME] got err while executing https://172.28.10.11:21/backup/acme-hyper-branding/.git/config <- GET https://172.28.10.11:21/backup/acme-hyper-branding/.git/config giving up after 2 attempts: Get "https://172.28.10.11:21/backup/acme-hyper-branding/.git/config": tls: first record does not look like a TLS handshake; could not tls handshake

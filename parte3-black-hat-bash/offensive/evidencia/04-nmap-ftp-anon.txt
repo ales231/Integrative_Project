@@ -1,0 +1,25 @@
+# Nmap 7.93 scan initiated Wed Jun 24 01:32:29 2026 as: nmap -p21 --script ftp-anon,ftp-syst -oN /lab/offensive/evidencia/04-nmap-ftp-anon.txt 172.28.10.11
+Nmap scan report for integrative-lab-victim-ftp.integrative-lab_dmz (172.28.10.11)
+Host is up (0.000070s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 172.28.10.2
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x    4 33       33           4096 Jun 24 01:14 backup
+|_-rw-rw-r--    1 33       33            157 Jun 24 01:14 index.html
+MAC Address: FE:C7:47:78:A6:EC (Unknown)
+
+# Nmap done at Wed Jun 24 01:32:29 2026 -- 1 IP address (1 host up) scanned in 0.24 seconds

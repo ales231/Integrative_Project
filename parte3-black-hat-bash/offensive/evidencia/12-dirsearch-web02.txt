@@ -1,0 +1,4 @@
+# Dirsearch started at 2026-06-24 01:33:53 as: /opt/dirsearch/dirsearch.py -u http://victim-web/ -e php,html,txt -t 30 -o /lab/offensive/evidencia/12-dirsearch-web02.txt
+200   221B http://victim-web/index.html  (19ms)
+200    57B http://victim-web/robots.txt  (11ms)
+200   149B http://victim-web/wp-login.php  (40ms)

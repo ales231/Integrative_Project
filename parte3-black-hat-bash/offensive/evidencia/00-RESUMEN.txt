@@ -1,0 +1,36 @@
+Black Hat Bash — Playbook ofensivo
+Fecha: 2026-06-24T01:36:50+00:00
+Modo: integrative
+
+Archivos de evidencia generados:
+00-RESUMEN.txt
+01-rustscan-subred.txt
+02-rustscan-nmap.log
+03-nmap-servicios.gnmap
+03-nmap-servicios.nmap
+03-nmap-servicios.xml
+04-nmap-ftp-anon.txt
+05-nmap-ssh-jumpbox.txt
+06-whatweb-web01.txt
+07-whatweb-ftp-http.txt
+08-whatweb-web02.txt
+09-dirsearch-web01.txt
+10-dirsearch-git-impact.txt
+11-dirsearch-git-hyper.txt
+12-dirsearch-web02.txt
+13-nuclei-web01.txt
+14-nuclei-ftp-http.txt
+15-nuclei-web02.txt
+16-nuclei-ftp.txt
+17-ftp-anon-listado.txt
+18-wp-user-enum.json
+19-backup-directory-index-headers.txt
+targets-integrative.txt
+
+Hallazgos esperados:
+  - Puertos HTTP/FTP/SSH descubiertos (RustScan/Nmap)
+  - FTP anónimo en 172.28.10.11
+  - Directory indexing en http://172.28.10.11/backup/
+  - Repos .git en /backup/acme-*
+  - Endpoints /upload en http://victim-web:8081
+  - Enumeración WP users en http://victim-web/?rest_route=/wp/v2/users

@@ -1,0 +1,8 @@
+# Nmap 7.93 scan initiated Wed Jun 24 01:31:01 2026 as: nmap -sV -sC --open -iL /lab/offensive/evidencia/targets-integrative.txt -oA /lab/offensive/evidencia/03-nmap-servicios
+Host: 172.28.10.10 (integrative-lab-victim-web.integrative-lab_dmz)	Status: Up
+Host: 172.28.10.10 (integrative-lab-victim-web.integrative-lab_dmz)	Ports: 80/open/tcp//http//nginx 1.22.1/, 8081/open/tcp//blackice-icecap?///	Ignored State: closed (998)
+Host: 172.28.10.11 (integrative-lab-victim-ftp.integrative-lab_dmz)	Status: Up
+Host: 172.28.10.11 (integrative-lab-victim-ftp.integrative-lab_dmz)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 80/open/tcp//http//Apache httpd 2.4.67 ((Debian))/	Ignored State: closed (998)
+Host: 172.28.10.13 (integrative-lab-jumpbox.integrative-lab_dmz)	Status: Up
+Host: 172.28.10.13 (integrative-lab-jumpbox.integrative-lab_dmz)	Ports: 22/open/tcp//ssh//OpenSSH 9.2p1 Debian 2+deb12u10 (protocol 2.0)/	Ignored State: closed (999)
+# Nmap done at Wed Jun 24 01:32:29 2026 -- 3 IP addresses (3 hosts up) scanned in 87.64 seconds

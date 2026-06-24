@@ -1,0 +1,31 @@
+# Dirsearch started at 2026-06-24 01:33:12 as: /opt/dirsearch/dirsearch.py -u http://172.28.10.11/backup/acme-impact-alliance/ -t 30 -o /lab/offensive/evidencia/10-dirsearch-git-impact.txt
+301   379B http://172.28.10.11/backup/acme-impact-alliance/.git  (20ms)  ->  http://172.28.10.11/backup/acme-impact-alliance/.git/
+200   166B http://172.28.10.11/backup/acme-impact-alliance/.git/config  (10ms)
+200    23B http://172.28.10.11/backup/acme-impact-alliance/.git/HEAD  (10ms)
+200    12B http://172.28.10.11/backup/acme-impact-alliance/.git/COMMIT_EDITMSG  (19ms)
+200    1KB http://172.28.10.11/backup/acme-impact-alliance/.git/info/  (10ms)
+200    1KB http://172.28.10.11/backup/acme-impact-alliance/.git/logs/  (9ms)
+200    4KB http://172.28.10.11/backup/acme-impact-alliance/.git/hooks/  (37ms)
+301   395B http://172.28.10.11/backup/acme-impact-alliance/.git/logs/refs/heads  (13ms)  ->  http://172.28.10.11/backup/acme-impact-alliance/.git/logs/refs/heads/
+200    3KB http://172.28.10.11/backup/acme-impact-alliance/.git/  (65ms)
+200   181B http://172.28.10.11/backup/acme-impact-alliance/.git/logs/HEAD  (27ms)
+301   389B http://172.28.10.11/backup/acme-impact-alliance/.git/logs/refs  (23ms)  ->  http://172.28.10.11/backup/acme-impact-alliance/.git/logs/refs/
+200   137B http://172.28.10.11/backup/acme-impact-alliance/.git/index  (42ms)
+200   240B http://172.28.10.11/backup/acme-impact-alliance/.git/info/exclude  (44ms)
+200   181B http://172.28.10.11/backup/acme-impact-alliance/.git/logs/refs/heads/master  (40ms)
+200    73B http://172.28.10.11/backup/acme-impact-alliance/.git/description  (93ms)
+200    2KB http://172.28.10.11/backup/acme-impact-alliance/.git/objects/  (56ms)
+301   390B http://172.28.10.11/backup/acme-impact-alliance/.git/refs/heads  (57ms)  ->  http://172.28.10.11/backup/acme-impact-alliance/.git/refs/heads/
+200    1KB http://172.28.10.11/backup/acme-impact-alliance/.git/refs/  (62ms)
+200   879B http://172.28.10.11/backup/acme-impact-alliance/.git/branches/  (140ms)
+301   389B http://172.28.10.11/backup/acme-impact-alliance/.git/refs/tags  (77ms)  ->  http://172.28.10.11/backup/acme-impact-alliance/.git/refs/tags/
+200    41B http://172.28.10.11/backup/acme-impact-alliance/.git/refs/heads/master  (139ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess  (12ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.hta  (18ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess-local  (19ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess.inc  (13ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess.orig  (13ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess.BAK  (24ms)
+403   317B http://172.28.10.11/backup/acme-impact-alliance/.htaccess.bak  (25ms)
+400   344B http://172.28.10.11/backup/acme-impact-alliance/Office/graph.php#xxe  (79ms)
+200    44B http://172.28.10.11/backup/acme-impact-alliance/README.md  (33ms)

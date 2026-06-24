@@ -1,0 +1,31 @@
+# Dirsearch started at 2026-06-24 01:33:33 as: /opt/dirsearch/dirsearch.py -u http://172.28.10.11/backup/acme-hyper-branding/ -t 30 -o /lab/offensive/evidencia/11-dirsearch-git-hyper.txt
+200   163B http://172.28.10.11/backup/acme-hyper-branding/.git/config  (10ms)
+200    3KB http://172.28.10.11/backup/acme-hyper-branding/.git/  (24ms)
+200   876B http://172.28.10.11/backup/acme-hyper-branding/.git/branches/  (32ms)
+301   378B http://172.28.10.11/backup/acme-hyper-branding/.git  (44ms)  ->  http://172.28.10.11/backup/acme-hyper-branding/.git/
+200    23B http://172.28.10.11/backup/acme-hyper-branding/.git/HEAD  (40ms)
+200    1KB http://172.28.10.11/backup/acme-hyper-branding/.git/logs/  (12ms)
+200   137B http://172.28.10.11/backup/acme-hyper-branding/.git/index  (23ms)
+301   394B http://172.28.10.11/backup/acme-hyper-branding/.git/logs/refs/heads  (10ms)  ->  http://172.28.10.11/backup/acme-hyper-branding/.git/logs/refs/heads/
+200   240B http://172.28.10.11/backup/acme-hyper-branding/.git/info/exclude  (23ms)
+200    4KB http://172.28.10.11/backup/acme-hyper-branding/.git/hooks/  (53ms)
+200    73B http://172.28.10.11/backup/acme-hyper-branding/.git/description  (65ms)
+200   178B http://172.28.10.11/backup/acme-hyper-branding/.git/logs/refs/heads/master  (35ms)
+200   178B http://172.28.10.11/backup/acme-hyper-branding/.git/logs/HEAD  (41ms)
+200    1KB http://172.28.10.11/backup/acme-hyper-branding/.git/refs/  (24ms)
+301   389B http://172.28.10.11/backup/acme-hyper-branding/.git/refs/heads  (24ms)  ->  http://172.28.10.11/backup/acme-hyper-branding/.git/refs/heads/
+301   388B http://172.28.10.11/backup/acme-hyper-branding/.git/refs/tags  (20ms)  ->  http://172.28.10.11/backup/acme-hyper-branding/.git/refs/tags/
+301   388B http://172.28.10.11/backup/acme-hyper-branding/.git/logs/refs  (55ms)  ->  http://172.28.10.11/backup/acme-hyper-branding/.git/logs/refs/
+200    2KB http://172.28.10.11/backup/acme-hyper-branding/.git/objects/  (50ms)
+200    41B http://172.28.10.11/backup/acme-hyper-branding/.git/refs/heads/master  (41ms)
+200    1KB http://172.28.10.11/backup/acme-hyper-branding/.git/info/  (105ms)
+200    12B http://172.28.10.11/backup/acme-hyper-branding/.git/COMMIT_EDITMSG  (145ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.hta  (18ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.htaccess.bak1  (10ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.ht_wsr.txt  (23ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.htaccess.BAK  (16ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.htaccess.orig  (11ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.htaccess.save  (10ms)
+403   317B http://172.28.10.11/backup/acme-hyper-branding/.htaccess.inc  (21ms)
+400   344B http://172.28.10.11/backup/acme-hyper-branding/Office/graph.php#xxe  (114ms)
+200    43B http://172.28.10.11/backup/acme-hyper-branding/README.md  (169ms)

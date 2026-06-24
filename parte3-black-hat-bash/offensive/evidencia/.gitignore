@@ -1,4 +1,7 @@
-# Evidencias generadas por exploit.sh — no commitear salidas masivas si el curso lo prohíbe
-*
-!.gitkeep
-!README.md
+# Permitir archivos de evidencia generados por el playbook ofensivo
+!*.txt
+!*.json
+!*.log
+!*.gnmap
+!*.xml
+!*.nmap

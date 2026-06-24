@@ -1,0 +1,33 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.3.7
+
+		projectdiscovery.io
+
+[[34mINF[0m] Your current nuclei-templates  are outdated. Latest is v10.4.5
+[[33mWRN[0m] failed to update nuclei templates: [:RUNTIME] failed to download templates <- [:RUNTIME] failed to read resp body <- context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[[34mVER[0m] Started metrics server at localhost:9092
+[[33mWRN[0m] Found 1 templates loaded with deprecated protocol syntax, update before v3 for continued support.
+[[34mINF[0m] Current nuclei version: v3.3.7 ([91moutdated[0m)
+[[34mINF[0m] Current nuclei-templates version:  ([91moutdated[0m)
+[[93mWRN[0m] Scan results upload to cloud is disabled.
+[[34mINF[0m] New templates added in latest release: 0
+[[34mINF[0m] Templates loaded for current scan: 5
+[[93mWRN[0m] Loading 5 unsigned templates for scan. Use with caution.
+[[34mINF[0m] Targets loaded for current scan: 1
+[[33mWRN[0m] [ftp-anonymous-login] Could not make network request for (172.28.10.11) : no port provided in network protocol request
+[[33mWRN[0m] [ftp-anonymous-login] Could not execute request for http://172.28.10.11: no port provided in network protocol request
+[[34mVER[0m] [git-config-exposure] Sent HTTP request to http://172.28.10.11/.git/config
+[[34mVER[0m] [wordpress-login-panel] Sent HTTP request to http://172.28.10.11/wp-login.php
+[[34mVER[0m] [git-config-exposure] Sent HTTP request to http://172.28.10.11/backup/acme-impact-alliance/.git/config
+[[92mgit-config-exposure[0m] [[94mhttp[0m] [[38;5;208mhigh[0m] http://172.28.10.11/backup/acme-impact-alliance/.git/config
+[[34mVER[0m] [git-config-exposure] Sent HTTP request to http://172.28.10.11/backup/acme-hyper-branding/.git/config
+[[92mgit-config-exposure[0m] [[94mhttp[0m] [[38;5;208mhigh[0m] http://172.28.10.11/backup/acme-hyper-branding/.git/config
+[[34mVER[0m] [unauthenticated-file-upload] Sent HTTP request to http://172.28.10.11/upload
+[[34mVER[0m] [directory-listing] Sent HTTP request to http://172.28.10.11/backup/
+[[34mVER[0m] [unauthenticated-file-upload] Sent HTTP request to http://172.28.10.11/uploads
+[[92mdirectory-listing[0m] [[94mhttp[0m] [[33mmedium[0m] http://172.28.10.11/backup/
+[[34mVER[0m] [directory-listing] Sent HTTP request to http://172.28.10.11/

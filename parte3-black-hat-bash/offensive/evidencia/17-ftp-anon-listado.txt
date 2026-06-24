@@ -1,0 +1,8 @@
+drwxr-xr-x    1 33       33           4096 Jun 24 01:14 .
+drwxr-xr-x    1 33       33           4096 Jun 24 01:14 ..
+drwxr-xr-x    4 33       33           4096 Jun 24 01:14 backup
+-rw-rw-r--    1 33       33            157 Jun 24 01:14 index.html
+drwxr-xr-x    4 33       33           4096 Jun 24 01:14 .
+drwxr-xr-x    1 33       33           4096 Jun 24 01:14 ..
+drwxr-xr-x    3 33       33           4096 Jun 24 01:14 acme-hyper-branding
+drwxr-xr-x    3 33       33           4096 Jun 24 01:14 acme-impact-alliance

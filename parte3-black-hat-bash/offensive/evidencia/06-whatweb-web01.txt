@@ -1,0 +1,38 @@
+WhatWeb report for [1m[34mhttp://victim-web:8081/[0m
+Status    : 200 OK
+Title     : [1m[33m<None>[0m
+IP        : 172.28.10.10
+Country   : [1m[31mRESERVED, ZZ[0m
+
+Summary   : [1mHTTPServer[0m[[1m[36mWerkzeug/2.2.2 Python/3.11.2[0m], [1mPython[0m[[1m[32m3.11.2[0m], [1mWerkzeug[0m[[1m[32m2.2.2[0m]
+
+Detected Plugins:
+[ [1mHTTPServer[0m ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : [1m[36mWerkzeug/2.2.2 Python/3.11.2[0m (from server string)
+
+[ [1mPython[0m ]
+	Python is a programming language that lets you work more 
+	quickly and integrate your systems more effectively. You 
+	can learn to use Python and see almost immediate gains in 
+	productivity and lower maintenance costs. 
+
+	Version      : [1m[32m3.11.2[0m
+	Website     : http://www.python.org/
+
+[ [1mWerkzeug[0m ]
+	Werkzeug is a WSGI utility library for Python. 
+
+	Version      : [1m[32m2.2.2[0m
+	Website     : http://werkzeug.pocoo.org/
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Server: Werkzeug/2.2.2 Python/3.11.2
+	Date: Wed, 24 Jun 2026 01:32:32 GMT
+	Content-Type: text/html; charset=utf-8
+	Content-Length: 36
+	Connection: close
+	

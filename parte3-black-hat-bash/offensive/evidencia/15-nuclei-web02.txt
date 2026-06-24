@@ -1,0 +1,32 @@
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v3.3.7
+
+		projectdiscovery.io
+
+[[34mINF[0m] Your current nuclei-templates  are outdated. Latest is v10.4.5
+[[33mWRN[0m] failed to update nuclei templates: [:RUNTIME] failed to download templates <- [:RUNTIME] failed to read resp body <- context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[[35murl[0m] got empty hostname for http://victim-web skipping ip selection
+[[34mVER[0m] Started metrics server at localhost:9092
+[[33mWRN[0m] Found 1 templates loaded with deprecated protocol syntax, update before v3 for continued support.
+[[34mINF[0m] Current nuclei version: v3.3.7 ([91moutdated[0m)
+[[34mINF[0m] Current nuclei-templates version:  ([91moutdated[0m)
+[[93mWRN[0m] Scan results upload to cloud is disabled.
+[[34mINF[0m] New templates added in latest release: 0
+[[34mINF[0m] Templates loaded for current scan: 5
+[[93mWRN[0m] Loading 5 unsigned templates for scan. Use with caution.
+[[34mINF[0m] Targets loaded for current scan: 1
+[[33mWRN[0m] [ftp-anonymous-login] Could not make network request for () : no port provided in network protocol request
+[[33mWRN[0m] [ftp-anonymous-login] Could not execute request for http://victim-web: no port provided in network protocol request
+[[34mVER[0m] [directory-listing] Sent HTTP request to http://victim-web/backup/
+[[34mVER[0m] [directory-listing] Sent HTTP request to http://victim-web/
+[[34mVER[0m] [wordpress-login-panel] Sent HTTP request to http://victim-web/wp-login.php
+[[34mVER[0m] [unauthenticated-file-upload] Sent HTTP request to http://victim-web/upload
+[[92mwordpress-login-panel[0m] [[94mhttp[0m] [[34minfo[0m] http://victim-web/wp-login.php
+[[34mVER[0m] [unauthenticated-file-upload] Sent HTTP request to http://victim-web/uploads
+[[34mVER[0m] [git-config-exposure] Sent HTTP request to http://victim-web/backup/acme-impact-alliance/.git/config
+[[34mVER[0m] [git-config-exposure] Sent HTTP request to http://victim-web/backup/acme-hyper-branding/.git/config
+[[33mWRN[0m] [git-config-exposure] Could not execute request for http://victim-web: [:RUNTIME] got err while executing http://victim-web/.git/config <- Get "http://victim-web/.git/config": errKind=network-permanent-error no address found for host

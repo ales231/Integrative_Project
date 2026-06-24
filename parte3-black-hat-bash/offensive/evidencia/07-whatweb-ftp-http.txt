@@ -1,0 +1,45 @@
+WhatWeb report for [1m[34mhttp://172.28.10.11/[0m
+Status    : 200 OK
+Title     : [1m[33mApache2 Ubuntu Default Page: It works[0m
+IP        : 172.28.10.11
+Country   : [1m[31mRESERVED, ZZ[0m
+
+Summary   : [1mApache[0m[[1m[32m2.4.67[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[31mDebian Linux[0m][[1m[36mApache/2.4.67 (Debian)[0m]
+
+Detected Plugins:
+[ [1mApache[0m ]
+	The Apache HTTP Server Project is an effort to develop and 
+	maintain an open-source HTTP server for modern operating 
+	systems including UNIX and Windows NT. The goal of this 
+	project is to provide a secure, efficient and extensible 
+	server that provides HTTP services in sync with the current 
+	HTTP standards. 
+
+	Version      : [1m[32m2.4.67[0m (from HTTP Server Header)
+	Google Dorks: (3)
+	Website     : http://httpd.apache.org/
+
+[ [1mHTML5[0m ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ [1mHTTPServer[0m ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	OS           : [1m[31mDebian Linux[0m
+	String       : [1m[36mApache/2.4.67 (Debian)[0m (from server string)
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Date: Wed, 24 Jun 2026 01:32:38 GMT
+	Server: Apache/2.4.67 (Debian)
+	Last-Modified: Wed, 24 Jun 2026 01:14:01 GMT
+	ETag: "9d-654f597451391-gzip"
+	Accept-Ranges: bytes
+	Vary: Accept-Encoding
+	Content-Encoding: gzip
+	Content-Length: 118
+	Connection: close
+	Content-Type: text/html
+	
