@@ -1,23 +1,37 @@
-# Makefile — Parte 3 Black Hat Bash
+SHELL := /bin/bash
+MAKEFLAGS += --no-print-directory
 
-.PHONY: deploy test logs down clean offensive
+.DEFAULT_GOAL := help
 
 deploy:
-	docker compose --env-file .env up -d --build
+	@./run.sh deploy
+
+teardown:
+	@./run.sh teardown
+
+clean:
+	@./run.sh clean
+
+rebuild:
+	@./run.sh rebuild
+
+status:
+	@./run.sh status
 
 test:
-	./tests/test-containers.sh
-	./tests/test-networks.sh
-	./tests/test-offensive.sh
+	@./run.sh status
 
-offensive:
-	docker compose exec attacker bash /lab/offensive/exploit.sh
+init:
+	@./init.sh
 
-logs:
-	docker compose logs -f
-
-down:
-	docker compose down -v
-
-clean: down
-	docker system prune -f
+help:
+	@echo "Usage: make deploy | teardown | clean | rebuild | status | init | help"
+	@echo 
+	@echo "deploy   | build images and start containers"
+	@echo "teardown | stop containers (shutdown lab)"
+	@echo "rebuild  | rebuilds the lab from scratch (clean and deploy)"
+	@echo "clean    | stop and delete containers and images"
+	@echo "status   | check the status of the lab"
+	@echo "init     | build everything (containers and hacking tools)"
+	@echo "help     | show this help message"
+	
