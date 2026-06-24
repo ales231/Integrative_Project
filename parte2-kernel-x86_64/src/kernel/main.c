@@ -6,7 +6,7 @@
 /* Mensaje personalizado del grupo — editar nombres antes de entregar */
 #define GROUP_BANNER_LINE1 "========================================"
 #define GROUP_BANNER_LINE2 "  Proyecto Integrador - Kernel x86_64"
-#define GROUP_BANNER_LINE3 "  Equipo: Integrative Project"
+#define GROUP_BANNER_LINE3 "  Equipo: Alex Alban, Mateo Canar y Arthur Beltran"
 #define GROUP_BANNER_LINE4 "  Long Mode + C activos (Episode 2)"
 #define GROUP_BANNER_LINE5 "========================================"
 
